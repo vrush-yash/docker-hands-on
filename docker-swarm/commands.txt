@@ -1,0 +1,3 @@
+# This file contents commands to execute and create docker swarm services
+# Here, we will deploy tomcat and mysql containers with swarm services
+# so that their service is expose outside of the swarm cluster

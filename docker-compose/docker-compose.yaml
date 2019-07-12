@@ -1,0 +1,42 @@
+version: "3.7"
+
+services:
+  database:
+    image: vrushyash/mariadb:latest
+    restart: always
+    environment:
+            MYSQL_ROOT_PASSWORD: mysql123 
+            MYSQL_DATABASE: testDB
+            MYSQL_USER: vrushal
+            MYSQL_PASSWORD: mysql123
+    ports:
+      - '3306:3306'
+    networks:
+            testnewnetwork:
+                    aliases:
+                            - maria_db
+
+    volumes:
+      - ./vol-mariadb:/var/lib/mysql
+    
+  tomcat:
+    image: vrushyash/tomcat
+    restart: always
+    environment:
+            MYSQL_SERVER_HOST: database
+            MYSQL_SERVER_PORT: 3306
+            MYSQL_SERVER_DB_NAME: testDB
+            MYSQL_SERVER_USER: vrushal
+            MYSQL_SERVER_PASSWORD: mysql123
+    ports:
+      - '8888:8080'
+    networks:
+            testnewnetwork:
+                    aliases:
+                            - tommy
+
+networks:
+        testnewnetwork:
+                external: true
+
+
