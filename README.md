@@ -4,7 +4,7 @@ This tutorial is based mainly on the practical examples. We will cover topics ba
 official Docker documentation website or if there is some other reference website.
 
 Starting with basic questions:
-Q1. What is Container? 
+Q1. What is Container?
 Q2. What is Docker?
 Q3. Is it same as virtualization?
 Q4. How it is different from Virtual Machines?
@@ -45,8 +45,10 @@ In summary:
 5. Who uses Dockers? well it is now being used by many big names of the IT industry. Rather naming them, consider this. Due to its advantages to leverage resources of same OS, you can host one or more applications
     and save resources. Hence, it had been useful in many areas, such as you can use just one machine and spin up a full fledge website with a backend light DB easily. BUT this can be done anyways without docker right ? Correct, but it wont be as portable as docker is. If you have created such scenario on a windows platform, you have re-design it for a Linux platform. But for dockers, easy peasy !
 
+
 Some references:
-https://itnext.io/chroot-cgroups-and-namespaces-an-overview-37124d995e3d
-https://www.redhat.com/en/topics/containers/whats-a-linux-container
-https://docs.docker.com/config/containers/resource_constraints/
-https://blog.netapp.com/blogs/containers-vs-vms/
+
+1. https://itnext.io/chroot-cgroups-and-namespaces-an-overview-37124d995e3d
+2. https://www.redhat.com/en/topics/containers/whats-a-linux-container
+3. https://docs.docker.com/config/containers/resource_constraints/
+4. https://blog.netapp.com/blogs/containers-vs-vms/
